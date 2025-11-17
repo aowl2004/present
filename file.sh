@@ -22,7 +22,7 @@ for i in  $(seq 61 36 5425); do
 	sleep 0.12
 done
 exit
------BEGIN RICK ROLL----
+-----BEGIN-----
                                                                                                               
                                                                                                               
                                                                                                               
