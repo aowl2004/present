@@ -6,7 +6,7 @@
 printf '\e[3;0;0t' #set window to top left
 printf '\e[8;36;130t' #resize window
 echo ""
-echo "The answer to life, the universe, and all things is:"
+echo "The present you are about to receive is:"
 sleep 2
 echo "Calculating.... 0%"
 sleep 1
