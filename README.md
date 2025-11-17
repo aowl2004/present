@@ -1,1 +1,1 @@
-run the present by opening file.sh
+get the present by opening file.sh
