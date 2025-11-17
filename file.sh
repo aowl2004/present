@@ -1,10 +1,10 @@
 #!/bin/bash
-#J.S. Nov 18 2021
-#ASCII Rickroll written in BASH. This file contains the first ~15 seconds worth of frames from "Never gonna give you up". They were converted to ASCII images and appended to the end of this script. The script steps through the file printing one frame worth of lines at a time.
-#Remember, since these lines are an offset you can only have 25 lines here unless you update the step offset. Otherwise it all goes wrong.
-#This is the small version for 130x36 terminal resolution
-printf '\e[3;0;0t' #set window to top left
-printf '\e[8;36;130t' #resize window
+#
+#
+#
+#
+printf '\e[3;0;0t'
+printf '\e[8;36;130t'
 echo ""
 echo "The present you are about to receive is:"
 sleep 2
@@ -16,12 +16,12 @@ echo "Calculating.... 50%"
 sleep 1
 echo "Calculating.... 90%"
 sleep 1
-for i in  $(seq 61 36 5425); do #Using a for loop, step through the frames.
-	#clear #Optional. Clears screen after every frame. Can cause issues.
-	cat $0 | head -$i | tail -36 #Get frame at (offset+(frame_number*y_resolution) lines, then only show last y_resolution lines. This displays each frame one after the other.
-	sleep 0.12 #Delay to set the frame rate. Smaller is fater, bigger is slower.
+for i in  $(seq 61 36 5425); do
+	#
+	cat $0 | head -$i | tail -36
+	sleep 0.12
 done
-exit #Now end the script before it tries to execute ASCII images as code. ASCII frames begin after line 25.
+exit
 -----BEGIN RICK ROLL----
                                                                                                               
                                                                                                               
